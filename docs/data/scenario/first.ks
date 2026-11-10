@@ -4,15 +4,21 @@
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
-[eval exp="f.shichoku=0"]
-[eval exp="f.jinbou=0"]
 
-「提出前夜」[r]
+;---初期化---
+[eval exp="f.shichoku=0;f.koukando=0;f.iraira=0;f.jikoku='21:00'"]
 
-ある日の夜、僕は友人と居酒屋にいた。[l][r]
+[macro name="hud"]
+[layopt layer=1 visible=true]
+[freeimage layer=1]
+[ptext layer=1 x=20 y=20 size=20 color=0xffffff text="&f.jikoku"]
+[ptext layer=1 x=20 y=56 size=20 color=0xff4444 text="&'レポート進捗 ' + f.shinchoku + '/100%'"]
+[endmacro]
 
-その日は小学校の同窓会があり、その３次会ということで二人で飲んでいたのだ。[l][r]
+「提出前夜」[p]
 
+火曜日、午後9時。二次会がお開きとなった。[p]
+その日は小学校の同窓会。二十歳の節目ということで、かなり久しぶりの面々も含め、多くの人が集まった。[p]
 [cm]
 
 ふと時計を見ると時計は21:00を指していた。[l][r]
@@ -39,7 +45,6 @@
 勇者は、ひどく赤面した。[r]
 
 【 BAD END 】[l][cm]
-
 [jump target=*start]
 
 *tag_run
