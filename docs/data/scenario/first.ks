@@ -22,7 +22,7 @@
 
 
 [chara_new name="aoi" storage="aoi.png" jname="あおい"]
-[chara_new name="???" storage="aoi_black.png" jname"???"]
+[chara_face name="aoi" face="black" storage="aoi_black.png"]
 
 「提出前夜」[l][r]
 
@@ -43,6 +43,7 @@
 
 こそこそと帰り支度を始める僕に，誰かが声をかけてきた．[p]
 
+[chara_show name="aoi" face="black"]
 #???
 「あれ，君は三次会行かないの？」[p]
 
@@ -60,6 +61,7 @@
 *1-a
 [cm]
 [eval exp="f.koukando-=2"]
+[chara_mod name="aoi" face="default"]
 #あおい
 「ハル？間違ってる割にすごい自信（笑）．あおいだよ」[p]
 [jump target=*s9]
@@ -67,6 +69,7 @@
 *1-b
 [cm]
 [eval exp="f.koukando-=1"]
+[chara_mod name="aoi" face="default"]
 #あおい
 「その顔，絶対覚えてないでしょ．あおいだよ！思い出した？」[p]
 #
@@ -76,7 +79,7 @@
 *1-c
 [cm]
 [eval exp="f.koukando+=2"]
-
+[chara_mod name="aoi" face="default"]
 #あおい
 「正解！こんなにすぐわかるなんて，感動しちゃう」[p]
 [jump target=*s9]
@@ -88,7 +91,7 @@
 「じゃあ名前言ってみて？」[p]
 #
 「あおい，だよね，全然変わってない」[p]
-
+[chara_mod name="aoi" face="default"]
 #あおい
 「正解！あんまり期待してなかったからうれしいよ～」[p]
 [jump target=*s9]
@@ -423,9 +426,9 @@ NORMAL END[r]
 #
 何ということだ．そんなことまで書いてあるとは．顔から火が出そうだ．[p]
 #あおい
-「・・・・・」
+「・・・・・」[p]
 #
-「・・・・・」
+「・・・・・」[p]
 #あおい
 「ねえ．まだ私のこと，好き？」[l][r]
 [if exp="f.koukando>=8"]
