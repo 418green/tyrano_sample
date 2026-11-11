@@ -132,6 +132,7 @@
 #あおい
 「今日は幹事ありがと．元気でね，ばいばい．」[p]
 #
+[chara_hide_all time=500]
 [freeimage layer="base" time=500]
 
 [bg storage="room.jpg" time=800]
@@ -152,15 +153,18 @@ STUPID END[r]
 
 
 [cm]
+[chara_hide name="aoi" time=500]
 [freeimage layer="base" time=500]
 [wait time=500]
 
 [bg storage="nomiyagai.jpg" time=800]
+[chara_show name="aoi"]
 #あおい
 「ここだよ！ここ安いし，焼き鳥もすごい美味しいんだよ～」[p]
 
 
 [cm]
+[chara_hide name="aoi" time=500]
 [freeimage layer="base" time=500]
 [wait time=500]
 
@@ -170,6 +174,7 @@ STUPID END[r]
 [cm]
 [eval exp="f.jikoku='21:30'"]
 [hud]
+[chara_show name="aoi"]
 #あおい
 「かんぱい！」[p]
 #
@@ -336,18 +341,20 @@ NORMAL END[r]
 もう後戻りはできない．僕らはわが家へと向かった．[p]
 
 [cm]
+[chara_hide name="aoi" time=500]
 [freeimage layer="base" time=500]
 [wait time=500]
 
 [bg storage="room.jpg" time=800]
 [eval exp="f.jikoku='0:20'"]
 [hud]
+[chara_show name="aoi"]
 #あおい
 「へー結構きれいにしてるんだね．お！これ小学校の時の日記じゃん！」[l][r]
 #
 昔の絵日記を見つけてはしゃぐ彼女を横目に僕は机に向かう．[p]
 [cm]
-
+[chara_hide name="aoi" time=500]
 [bg storage="room_pc.jpg" time=800]
 
 #あおい
@@ -469,6 +476,7 @@ TRUE END[r]
 [cm]
 #
 人の気持ちにずけずけ踏み込んで．[l][r]
+[chara_show name="aoi" face="black" time=200]
 僕が好きだったあの頃のあおいはもういない．そう思うと自然と僕の手は彼女の首へと伸びていた．[p]
 [cm]
 [freeimage layer=1]
